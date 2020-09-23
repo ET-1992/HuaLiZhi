@@ -4,53 +4,53 @@ var gulp = require('gulp'),
   gulpAutoprefixer = require('gulp-autoprefixer'),
   extender = require('gulp-html-extend')
  
-gulp.task('connect-web', function() {
-  connect.server({
+gulp.task('connect-web', async function() {
+  return connect.server({
     root: './src/web',
     livereload: true,
     port: 8081
   });
 });
  
-gulp.task('html-web', function () {
-  gulp.src('./src/web/*.html')
+gulp.task('html-web', async function () {
+  return gulp.src('./src/web/*.html')
     .pipe(extender({annotations:true,verbose:false}))
     .pipe(gulp.dest('./src/web/dist/html'))
     .pipe(connect.reload());
 });
 
-gulp.task('sass-web', function () {
-    gulp.src('./src/web/scss/*.scss')
+gulp.task('sass-web', async function () {
+  return gulp.src('./src/web/scss/*.scss')
       .pipe(gulpSass())
       .pipe(gulpAutoprefixer())
       .pipe(gulp.dest('./src/web/dist'))
       .pipe(connect.reload())
   });
 
-gulp.task('image-web', function () {
-  gulp.src('./src/web/image/*')
+gulp.task('image-web',async function () {
+  return gulp.src('./src/web/image/*')
     .pipe(gulp.dest('./src/web/dist/image'))
     .pipe(connect.reload())
 });
 
-gulp.task('font-web', function () {
-  gulp.src('./src/web/font/*')
+gulp.task('font-web',async function () {
+  return gulp.src('./src/web/font/*')
     .pipe(gulp.dest('./src/web/dist/font'))
     .pipe(connect.reload())
 });
 
-gulp.task('js-web', function () {
-  gulp.src('./src/web/js/*')
+gulp.task('js-web',async function () {
+  return gulp.src('./src/web/js/*')
     .pipe(gulp.dest('./src/web/dist/js'))
     .pipe(connect.reload())
 });
 
-gulp.task('watch-web', function () {
-  gulp.watch(['./src/web/*.html'], ['html-web']);
-  gulp.watch(['./src/web/scss/*.scss'], ['sass-web']);
-  gulp.watch(['./src/web/image/*'], ['image-web']);
-  gulp.watch(['./src/web/font/*'], ['font-web']);
-  gulp.watch(['./src/web/js/*'], ['js-web']);
+gulp.task('watch-web',async function () {
+  gulp.watch(['./src/web/*.html'],  gulp.series('html-web'));
+  gulp.watch(['./src/web/scss/*.scss'],  gulp.series('sass-web'));
+  gulp.watch(['./src/web/image/*'],  gulp.series('image-web'));
+  gulp.watch(['./src/web/font/*'],  gulp.series('font-web'));
+  gulp.watch(['./src/web/js/*'],  gulp.series('js-web'));
 });
  
 gulp.task('web', gulp.series('connect-web', 'html-web', 'sass-web', 'image-web', 'font-web', 'js-web', 'watch-web'));
