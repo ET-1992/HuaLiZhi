@@ -269,7 +269,7 @@ textarea {
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  outline-offset: -0.57143vw;
+  outline-offset: -0.26667vw;
   /* 2 */ }
 
 /**
@@ -384,7 +384,7 @@ a:hover {
 
 /** 重置表单元素 **/
 legend {
-  text-indent: -2856.85714vw;
+  text-indent: -1333.2vw;
   height: 0; }
 
 fieldset, img {
@@ -456,7 +456,7 @@ a:visited {
   color: #999; }
 
 body {
-  min-width: 342.85714vw;
+  min-width: 160vw;
   background-color: #fff;
   font-family: 'Helvetica'; }
 
