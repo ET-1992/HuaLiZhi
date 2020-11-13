@@ -1,0 +1,43 @@
+.footer-wrap{
+    background: #F1F1F1;
+    .footer-nav{
+        padding: 30px 50px 0;
+        li{
+            display:table-cell;  
+            width:2000px; 
+            *width:auto; 
+            *zoom:1;
+            text-align:center;
+            a{
+                display: block;
+                font-size: 14px;
+                color: #000000;
+            }
+            a:hover{
+                display: block;
+                color: #333333;
+            }
+        }
+    }
+    .third-box{
+       text-align: center;
+       padding: 40px 0;
+        li{
+            display: inline-block;
+            margin: 0 20px;
+            img{
+                display: block;
+                width: 27px;
+                object-fit: contain;
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+        height: 35px;
+        line-height: 35px;
+        font-size: 11px;
+        color: #000000;
+        border-top: 1px solid rgba(151, 151, 151, 0.5);
+    }
+}

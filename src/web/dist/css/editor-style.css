@@ -1,0 +1,362 @@
+/*
+Theme Name: Twenty Sixteen
+Description: Used to style the TinyMCE editor.
+*/
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Body
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Alignment
+ * 5.0 - Caption
+ * 6.0 - Galleries
+ * 7.0 - Audio / Video
+ * 8.0 - RTL
+ */
+/**
+ * 1.0 - Body
+ */
+.editor {
+  /**
+	 * 2.0 - Typography
+	 */
+  /**
+	 * 3.0 - Elements
+	 */
+  /**
+	 * 4.0 - Alignment
+	 */
+  /**
+	 * 5.0 - Caption
+	 */
+  /**
+	 * 6.0 - Galleries
+	 */
+  /**
+	 * 7.0 - Audio / Video
+	 */
+  /**
+	 * 8.0 - RTL
+	 */ }
+  .editor body {
+    color: #1a1a1a;
+    font-family: Merriweather, Georgia, serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+    margin: 20px 40px;
+    max-width: 600px;
+    vertical-align: baseline; }
+  .editor body.post-type-page {
+    max-width: 840px; }
+  .editor h1,
+  .editor h2,
+  .editor h3,
+  .editor h4,
+  .editor h5,
+  .editor h6 {
+    clear: both;
+    font-weight: 900;
+    margin: 56px 0 28px; }
+  .editor h1 {
+    font-size: 34px;
+    line-height: 1.2727272727; }
+  .editor h2 {
+    font-size: 29px;
+    line-height: 1.25; }
+  .editor h3 {
+    font-size: 24px;
+    line-height: 1.2173913043; }
+  .editor h4,
+  .editor h5,
+  .editor h6 {
+    font-size: 16px;
+    line-height: 1.1052631579; }
+  .editor h4 {
+    letter-spacing: 0.13333em;
+    text-transform: uppercase; }
+  .editor h6 {
+    font-style: italic; }
+  .editor h1:first-child,
+  .editor h2:first-child,
+  .editor h3:first-child,
+  .editor h4:first-child,
+  .editor h5:first-child,
+  .editor h6:first-child {
+    margin-top: 0; }
+  .editor p {
+    margin: 0 0 28px;
+    font-size: 18px; }
+  .editor b,
+  .editor strong {
+    font-weight: 700; }
+  .editor dfn,
+  .editor cite,
+  .editor em,
+  .editor i {
+    font-style: italic; }
+  .editor blockquote {
+    border-left: 4px solid #1a1a1a;
+    color: #686868;
+    font-size: 19px;
+    font-style: italic;
+    line-height: 1.4736842105;
+    margin-bottom: 28px;
+    overflow: hidden;
+    padding: 0 0 0 24px; }
+  .editor blockquote:not(.alignleft):not(.alignright) {
+    margin-left: -28px; }
+  .editor blockquote blockquote:not(.alignleft):not(.alignright) {
+    margin-left: 0; }
+  .editor blockquote:before,
+  .editor blockquote:after {
+    content: "";
+    display: table; }
+  .editor blockquote:after {
+    clear: both; }
+  .editor blockquote > :last-child {
+    margin-bottom: 0; }
+  .editor blockquote cite,
+  .editor blockquote small {
+    color: #1a1a1a;
+    font-size: 16px;
+    line-height: 1.75; }
+  .editor blockquote em,
+  .editor blockquote i,
+  .editor blockquote cite {
+    font-style: normal; }
+  .editor blockquote strong,
+  .editor blockquote b {
+    font-weight: 400; }
+  .editor blockquote.alignleft,
+  .editor blockquote.alignright {
+    border: 0 solid #1a1a1a;
+    border-top-width: 4px;
+    padding: 18px 0 0;
+    width: calc(50% - 14px); }
+  .editor address {
+    font-style: italic;
+    margin: 0 0 28px; }
+  .editor code,
+  .editor kbd,
+  .editor tt,
+  .editor var,
+  .editor samp,
+  .editor pre {
+    font-family: Inconsolata, monospace; }
+  .editor pre {
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    line-height: 1.3125;
+    margin: 0 0 28px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 14px;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word; }
+  .editor code {
+    background-color: #d1d1d1;
+    padding: 2px 4px; }
+  .editor abbr[title] {
+    border-bottom: 1px dotted #d1d1d1;
+    cursor: help; }
+  .editor mark,
+  .editor ins {
+    background: #007acc;
+    color: #fff;
+    padding: 2px 4px;
+    text-decoration: none; }
+  .editor sup,
+  .editor sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline; }
+  .editor sup {
+    top: -6px; }
+  .editor sub {
+    bottom: -3px; }
+  .editor small {
+    font-size: 80%; }
+  .editor big {
+    font-size: 125%; }
+  .editor hr {
+    background-color: #d1d1d1;
+    border: 0;
+    height: 1px;
+    margin-bottom: 28px; }
+  .editor ul,
+  .editor ol {
+    margin: 0 0 28px 0;
+    padding: 0; }
+  .editor ul {
+    list-style: disc; }
+  .editor ol {
+    list-style: decimal; }
+  .editor li > ul,
+  .editor li > ol {
+    margin-bottom: 0; }
+  .editor li > ul,
+  .editor blockquote > ul {
+    margin-left: 20px; }
+  .editor li > ol,
+  .editor blockquote > ol {
+    margin-left: 24px; }
+  .editor dl {
+    margin: 0 0 28px; }
+  .editor dt {
+    font-weight: bold; }
+  .editor dd {
+    margin: 0 0 28px; }
+  .editor table,
+  .editor th,
+  .editor td,
+  .editor .mce-item-table,
+  .editor .mce-item-table th,
+  .editor .mce-item-table td {
+    border: 1px solid #d1d1d1; }
+  .editor table a {
+    color: #007acc; }
+  .editor table,
+  .editor .mce-item-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 28px;
+    width: 100%; }
+  .editor table th,
+  .editor .mce-item-table th,
+  .editor table caption {
+    border-width: 0 1px 1px 0;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 7px;
+    text-align: left;
+    vertical-align: baseline; }
+  .editor table td,
+  .editor .mce-item-table td {
+    border-width: 0 1px 1px 0;
+    font-size: 16px;
+    padding: 7px;
+    vertical-align: baseline; }
+  .editor img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle; }
+  .editor a img {
+    display: block; }
+  .editor figure {
+    margin: 0; }
+  .editor del {
+    opacity: 0.8; }
+  .editor a {
+    -webkit-box-shadow: 0 1px 0 0 currentColor;
+            box-shadow: 0 1px 0 0 currentColor;
+    color: #007acc;
+    text-decoration: none; }
+  .editor fieldset {
+    border: 1px solid #d1d1d1;
+    margin: 0 0 28px;
+    padding: 14px; }
+  .editor .alignleft {
+    float: left;
+    margin: 6px 28px 28px 0; }
+  .editor .alignright {
+    float: right;
+    margin: 6px 0 28px 28px; }
+  .editor .aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto 28px; }
+  .editor .wp-caption {
+    background: transparent;
+    border: none;
+    margin-bottom: 28px;
+    max-width: 100%;
+    padding: 0;
+    text-align: inherit; }
+  .editor .wp-caption-text,
+  .editor .wp-caption-dd {
+    color: #686868;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.6153846154;
+    padding-top: 7px; }
+  .editor .mce-content-body .wpview-wrap {
+    margin-bottom: 28px; }
+  .editor .gallery {
+    margin: 0 -1.1666667%;
+    padding: 0; }
+  .editor .gallery .gallery-item {
+    display: inline-block;
+    max-width: 33.33%;
+    padding: 0 1.1400652% 2.2801304%;
+    text-align: center;
+    vertical-align: top;
+    width: 100%; }
+  .editor .gallery-columns-1 .gallery-item {
+    max-width: 100%; }
+  .editor .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .editor .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .editor .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .editor .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .editor .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .editor .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .editor .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+  .editor .gallery .gallery-caption {
+    font-size: 13px;
+    margin: 0; }
+  .editor .gallery-columns-6 .gallery-caption,
+  .editor .gallery-columns-7 .gallery-caption,
+  .editor .gallery-columns-8 .gallery-caption,
+  .editor .gallery-columns-9 .gallery-caption {
+    display: none; }
+  .editor .wp-audio-shortcode a,
+  .editor .wp-playlist a {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .editor .mce-content-body .wp-audio-playlist {
+    margin: 0;
+    padding-bottom: 0; }
+  .editor .mce-content-body .wp-playlist-tracks {
+    margin-top: 0; }
+  .editor .mce-content-body .wp-playlist-item {
+    padding: 10px 0; }
+  .editor .mce-content-body .wp-playlist-item-length {
+    top: 10px; }
+  .editor .rtl blockquote {
+    border: 0 solid #1a1a1a;
+    border-right-width: 4px; }
+  .editor .rtl blockquote.alignleft,
+  .editor .rtl blockquote.alignright {
+    border: 0 solid #1a1a1a;
+    border-top-width: 4px; }
+  .editor .rtl blockquote:not(.alignleft):not(.alignright) {
+    margin-right: -28px;
+    padding: 0 24px 0 0; }
+  .editor .rtl blockquote blockquote:not(.alignleft):not(.alignright) {
+    margin-right: 0;
+    margin-left: auto; }
+  .editor .rtl li > ul,
+  .editor .rtl blockquote > ul {
+    margin-right: 20px;
+    margin-left: auto; }
+  .editor .rtl li > ol,
+  .editor .rtl blockquote > ol {
+    margin-right: 24px;
+    margin-left: auto; }
+  .editor .rtl table th,
+  .editor .rtl .mce-item-table th,
+  .editor .rtl table caption {
+    text-align: right; }
